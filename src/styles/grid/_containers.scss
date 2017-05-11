@@ -1,0 +1,156 @@
+/*
+===Global Container===
+Mobile < 680px
+  Max width -> 480px
+  outer light grey
+  inner white
+
+Tablet 680-960
+  Follow size of screen
+  all white
+
+Desktop 960-1200px
+  Follow size of screen till 1440px max
+  outer light grey
+  inner white
+*/
+
+html {
+  font-size: $root-mobile;
+  background-color: #f5f5f5;
+}
+
+body {
+  font-size: $main-text-size-mobile;
+  min-width: 240px;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  padding: 20px 10px;
+  margin: auto;
+}
+
+p {
+  -webkit-margin-before: 1rem;
+  -webkit-margin-after: 1rem;
+  font-size: $main-text-size-mobile;
+}
+.text-sm{
+  font-size: $main-text-size-mobile * $text-sm;
+}
+.text-md{
+  font-size: $main-text-size-mobile * $text-md;
+}
+.text-lg{
+  font-size: $main-text-size-mobile * $text-lg;
+}
+.text-xl{
+  font-size: $main-text-size-mobile * $text-xl;
+}
+
+@media only screen and (min-width: $tablet) {
+  .container {
+    min-width: $tablet * $mobile-percentage;
+    max-width: $tablet-max-width;
+  }
+  body{
+    max-width: 100%
+  }
+  html {
+    background-color: white;
+  }
+  html {
+    font-size: $root-tablet;
+  }
+  body {
+    font-size: $main-text-size-tablet;
+  }
+
+  p {
+    font-size: $main-text-size-tablet;
+  }
+  .text-sm{
+    font-size: $main-text-size-tablet * $text-sm;
+  }
+  .text-md{
+    font-size: $main-text-size-tablet * $text-md;
+  }
+  .text-lg{
+    font-size: $main-text-size-tablet * $text-lg;
+  }
+  .text-xl{
+    font-size: $main-text-size-tablet * $text-xl;
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .container {
+    min-width: $desktop * $tablet-percentage;
+    max-width: $desktop-max-width;
+  }
+  body{
+    max-width: 100%
+  }
+  html {
+    font-size: $root-desktop;
+  }
+  body {
+    font-size: $main-text-size-desktop;
+  }
+
+  p {
+    font-size: $main-text-size-desktop;
+  }
+  .text-sm{
+    font-size: $main-text-size-desktop * $text-sm;
+  }
+  .text-md{
+    font-size: $main-text-size-desktop * $text-md;
+  }
+  .text-lg{
+    font-size: $main-text-size-desktop * $text-lg;
+  }
+  .text-xl{
+    font-size: $main-text-size-desktop * $text-xl;
+  }
+}
+
+@media only screen and (min-width: $hd-desktop) {
+  .container {
+    min-width: $hd-desktop * $desktop-percentage;
+    width: $hd-desktop-max-width;
+    max-width: $absolute-max-width;
+  }
+  body {
+    width: 100%;
+    max-width: $absolute-max-width;
+  }
+  html {
+    font-size: $root-hd-desktop;
+  }
+  body {
+    font-size: $main-text-size-hd-desktop;
+  }
+
+  p {
+    font-size: $main-text-size-hd-desktop;
+  }
+  .text-sm{
+    font-size: $main-text-size-hd-desktop * $text-sm;
+  }
+  .text-md{
+    font-size: $main-text-size-hd-desktop * $text-md;
+  }
+  .text-lg{
+    font-size: $main-text-size-hd-desktop * $text-lg;
+  }
+  .text-xl{
+    font-size: $main-text-size-hd-desktop * $text-xl;
+  }
+}
